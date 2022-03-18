@@ -93,6 +93,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-asciidoctor",
     url = "https://github.com/habamax/vim-asciidoctor"
+  },
+  ["vim-buffergator"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-buffergator",
+    url = "https://github.com/jeetsukumaran/vim-buffergator"
+  },
+  ["vim-buftabline"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-buftabline",
+    url = "https://github.com/ap/vim-buftabline"
   }
 }
 

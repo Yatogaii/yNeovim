@@ -5,4 +5,6 @@ require('packer').startup(function()
   use 'habamax/vim-asciidoctor' -- asciidoctor plugin
   use 'vim-airline/vim-airline' -- airline
   use 'vim-airline/vim-airline-themes' -- theme plugin
+  use 'ap/vim-buftabline'  -- buffer exploer
+  use 'jeetsukumaran/vim-buffergator'
 end)
