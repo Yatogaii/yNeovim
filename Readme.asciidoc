@@ -1,0 +1,16 @@
+= 配置文件
+
+[source]
+----
+git clone https://github.com/yatogaii/yNeovim.git ~/.config/nvim/
+----
+
+linux 配置packer：
+[source]
+----
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+----
+
+linux 配置lspconfig
+
