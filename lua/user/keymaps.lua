@@ -34,8 +34,8 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- open terminal
-keymap("n", "<F5>", ":terminal<CR>", opts)
-
+keymap("n", "<S-F5>", ":FloatermNew --position=bottomright<cr>", opts)
+keymap("n", "<F5>", ":FloatermToggle<cr>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
