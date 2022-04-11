@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
@@ -129,6 +134,17 @@ _G.packer_plugins = {
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -144,11 +160,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-buffergator",
     url = "https://github.com/jeetsukumaran/vim-buffergator"
   },
-  ["vim-buftabline"] = {
-    loaded = true,
-    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-buftabline",
-    url = "https://github.com/ap/vim-buftabline"
-  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-floaterm",
@@ -157,6 +168,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 
 end)

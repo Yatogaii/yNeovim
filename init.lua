@@ -6,3 +6,4 @@ require "user.lspconfig"
 require "user.cmp"
 -- require "user.lsp"
 
+require "user.conf"

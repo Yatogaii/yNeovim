@@ -1,9 +1,11 @@
+require("user.plugins.init")
+
 local use = require('packer').use
 require('packer').startup(function()
   use 'wbthomason/packer.nvim' -- Package manager
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
   use 'habamax/vim-asciidoctor' -- asciidoctor plugin
-  use 'ap/vim-buftabline'  -- buffer exploer
+  -- use 'ap/vim-buftabline'  -- buffer exploer
   use 'jeetsukumaran/vim-buffergator'
   -- use 'hrsh7th/cmp-nvim-lsp'  -- lsp completion
   use 'williamboman/nvim-lsp-installer'-- lsp installer
@@ -21,7 +23,16 @@ require('packer').startup(function()
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-
+  -- file exploer
+  use {
+      "kyazdani42/nvim-tree.lua",
+      requires = {
+        "kyazdani42/nvim-web-devicons", -- optional, for file icon
+      },
+      config = function() require'nvim-tree'.setup {} end
+  }
+  -- buffer UI
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
