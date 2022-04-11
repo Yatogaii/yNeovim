@@ -10,7 +10,7 @@ end
 
 require("luasnip/loaders/from_vscode").lazy_load()
 
-local chek_backspace = function()
+local check_backspace = function()
   local col = vim.fn.col "." - 1
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
@@ -72,8 +72,8 @@ cmp.setup {
         luasnip.expand()
       elseif luasnip.expand_or_jumpable() then
         luasnip.expand_or_jump()
-     --  elseif check_backspace() then
-     --   fallback()
+      elseif check_backspace() then
+        fallback()
       else
         fallback()
       end
@@ -101,6 +101,8 @@ cmp.setup {
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
+        nvim_lsp = "[LSP]",
+        nvim_lua = "[NVIM_LUA]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
@@ -109,6 +111,8 @@ cmp.setup {
     end,
   },
   sources = {
+    { name = "nvim_lsp" },
+    { name = "nvim_lua" },
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
