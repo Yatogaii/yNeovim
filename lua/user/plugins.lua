@@ -31,6 +31,11 @@ require('packer').startup(function()
   }
   -- buffer UI
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
+  -- vim surround
+  use "tpope/vim-surround"
+  -- buffer dekete
+  use 'famiu/bufdelete.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
