@@ -29,6 +29,11 @@ require('packer').startup(function()
       },
       config = function() require'nvim-tree'.setup {} end
   }
+  -- telescope
+  use {
+      'nvim-telescope/telescope.nvim',
+      requires = { {'nvim-lua/plenary.nvim'} }
+  }
   -- buffer UI
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
   -- vim surround
