@@ -71,4 +71,4 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Plugins --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<leader>f", ":Telescope<cr>", opts)
+keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
