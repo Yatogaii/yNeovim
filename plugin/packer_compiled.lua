@@ -150,6 +150,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["onedarker.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedarker.nvim",
+    url = "https://github.com/lunarim/onedarker.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",

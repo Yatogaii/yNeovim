@@ -11,6 +11,7 @@ require('packer').startup(function()
   -- colorscheme
   use "lunarvim/colorschemes"
   use "lunarvim/darkplus.nvim"
+  use "lunarvim/onedarker.nvim"
   -- cmp
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
