@@ -153,7 +153,7 @@ _G.packer_plugins = {
   ["onedarker.nvim"] = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedarker.nvim",
-    url = "https://github.com/lunarim/onedarker.nvim"
+    url = "https://github.com/lunarvim/onedarker.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -189,6 +189,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
     url = "https://github.com/tpope/vim-surround"
+  },
+  ["vista.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vista.vim",
+    url = "https://github.com/liuchengxu/vista.vim"
   }
 }
 
