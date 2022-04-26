@@ -72,7 +72,7 @@ bufferline.setup ({
     separator_style = "thin", --| "slant" | "thick" | "thin" | { 'any', 'any' },
     enforce_regular_tabs = false, --| true,
     always_show_bufferline = true, -- | false,
-    sort_by =  'directory',  -- ,'id' | 'extension' | 'relative_directory' | 'directory' | 'tabs' | function(buffer_a, buffer_b)
+    sort_by =  'tabs',  -- ,'id' | 'extension' | 'relative_directory' | 'directory' | 'tabs' | function(buffer_a, buffer_b)
     --   -- add custom logic
     --   return buffer_a.modified > buffer_b.modified
     -- end
