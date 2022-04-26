@@ -44,6 +44,8 @@ require('packer').startup(function()
   use "jiangmiao/auto-pairs"
   -- buffer dekete
   use 'famiu/bufdelete.nvim'
+  -- sessions
+  use "rmagatti/auto-session"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

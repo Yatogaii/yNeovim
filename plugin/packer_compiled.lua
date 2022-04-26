@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
+  ["auto-session"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\auto-session",
+    url = "https://github.com/rmagatti/auto-session"
+  },
   ["bufdelete.nvim"] = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufdelete.nvim",
