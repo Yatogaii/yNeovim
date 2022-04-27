@@ -7,7 +7,10 @@ require('packer').startup(function()
   use 'jeetsukumaran/vim-buffergator'
   -- use 'hrsh7th/cmp-nvim-lsp'  -- lsp completion
   use 'williamboman/nvim-lsp-installer'-- lsp installer
-  use 'voldikss/vim-floaterm'
+  -- format
+  use "lukas-reineke/lsp-format.nvim"
+  --  use 'voldikss/vim-floaterm'  -- too hard to config
+  use 'editorconfig/editorconfig-vim'
   -- colorscheme
   use "lunarvim/colorschemes"
   use "lunarvim/darkplus.nvim"
@@ -24,6 +27,7 @@ require('packer').startup(function()
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   -- tagbar
   use 'liuchengxu/vista.vim'
+  use "lukas-reineke/indent-blankline.nvim"
   -- file exploer
   use {
       "kyazdani42/nvim-tree.lua",
