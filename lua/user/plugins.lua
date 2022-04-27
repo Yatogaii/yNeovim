@@ -8,8 +8,8 @@ require('packer').startup(function()
   -- use 'hrsh7th/cmp-nvim-lsp'  -- lsp completion
   use 'williamboman/nvim-lsp-installer'-- lsp installer
   -- format
-  use "lukas-reineke/lsp-format.nvim"
-  --  use 'voldikss/vim-floaterm'  -- too hard to config
+  -- use "lukas-reineke/lsp-format.nvim"
+  use 'voldikss/vim-floaterm'  
   use 'editorconfig/editorconfig-vim'
   -- colorscheme
   use "lunarvim/colorschemes"
