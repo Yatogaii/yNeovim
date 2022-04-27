@@ -10,7 +10,7 @@ require('packer').startup(function()
   -- format
   -- use "lukas-reineke/lsp-format.nvim"
   use 'voldikss/vim-floaterm'  
-  use 'editorconfig/editorconfig-vim'
+  -- use 'editorconfig/editorconfig-vim'
   -- colorscheme
   use "lunarvim/colorschemes"
   use "lunarvim/darkplus.nvim"
