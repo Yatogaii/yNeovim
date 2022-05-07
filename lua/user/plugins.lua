@@ -9,7 +9,7 @@ require('packer').startup(function()
   use 'williamboman/nvim-lsp-installer'-- lsp installer
   -- format
   -- use "lukas-reineke/lsp-format.nvim"
-  use 'voldikss/vim-floaterm'  
+  use 'voldikss/vim-floaterm'
   use 'editorconfig/editorconfig-vim'
   -- colorscheme
   use "lunarvim/colorschemes"
@@ -28,6 +28,8 @@ require('packer').startup(function()
   -- tagbar
   use 'liuchengxu/vista.vim'
   use "lukas-reineke/indent-blankline.nvim"
+  -- auto save
+  use "Pocco81/AutoSave.nvim"
   -- file exploer
   use {
       "kyazdani42/nvim-tree.lua",
@@ -48,6 +50,11 @@ require('packer').startup(function()
   use "jiangmiao/auto-pairs"
   -- buffer dekete
   use 'famiu/bufdelete.nvim'
+  -- airline
+  use 'vim-airline/vim-airline'
+  use 'vim-airline/vim-airline-themes'
+  -- session
+  use  'Shatur/neovim-session-manager'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

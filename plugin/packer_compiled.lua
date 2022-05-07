@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["AutoSave.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\AutoSave.nvim",
+    url = "https://github.com/Pocco81/AutoSave.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
@@ -139,6 +144,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["neovim-session-manager"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim-session-manager",
+    url = "https://github.com/Shatur/neovim-session-manager"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -184,6 +194,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
+  },
+  ["vim-airline-themes"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline-themes",
+    url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-asciidoctor"] = {
     loaded = true,
