@@ -27,12 +27,9 @@ require('packer').startup(function()
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-  -- tagbar
+  -- Outline
 --  use 'liuchengxu/vista.vim'
-  use {
-    'stevearc/aerial.nvim',
-    config = function() require('aerial').setup() end
-  }
+  use 'simrat39/symbols-outline.nvim'
   use "lukas-reineke/indent-blankline.nvim"
   -- auto save
   use "Pocco81/AutoSave.nvim"
