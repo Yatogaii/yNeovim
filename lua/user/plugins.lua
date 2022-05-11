@@ -15,6 +15,8 @@ require('packer').startup(function()
   use "lunarvim/colorschemes"
   use "lunarvim/darkplus.nvim"
   use "lunarvim/onedarker.nvim"
+  -- tree-sitter
+  use 'nvim-treesitter/nvim-treesitter'
   -- cmp
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -26,7 +28,11 @@ require('packer').startup(function()
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   -- tagbar
-  use 'liuchengxu/vista.vim'
+--  use 'liuchengxu/vista.vim'
+  use {
+    'stevearc/aerial.nvim',
+    config = function() require('aerial').setup() end
+  }
   use "lukas-reineke/indent-blankline.nvim"
   -- auto save
   use "Pocco81/AutoSave.nvim"
@@ -56,7 +62,7 @@ require('packer').startup(function()
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   -- session
-  use  'Shatur/neovim-session-manager'
+--  use  'Shatur/neovim-session-manager'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
