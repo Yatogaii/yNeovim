@@ -26,7 +26,6 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
-
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
@@ -86,3 +85,4 @@ keymap("n", "<leader>7", ":BufferLineGoToBuffer 7<cr>", opts)
 keymap("n", "<leader>8", ":BufferLineGoToBuffer 8<cr>", opts)
 keymap("n", "<leader>9", ":BufferLineGoToBuffer 9<cr>", opts)
 keymap("n", "<leader>sm", ":SessionManager load_session<cr>", opts)
+keymap("n", "<leader>d", ":Bdelete<cr>", opts)
