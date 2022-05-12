@@ -144,11 +144,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["neovim-session-manager"] = {
-    loaded = true,
-    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neovim-session-manager",
-    url = "https://github.com/Shatur/neovim-session-manager"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
@@ -193,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["possession.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ykh\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\possession.nvim",
+    url = "https://github.com/jedrzejboczar/possession.nvim"
   },
   ["symbols-outline.nvim"] = {
     loaded = true,

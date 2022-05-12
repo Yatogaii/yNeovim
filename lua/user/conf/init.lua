@@ -1,6 +1,7 @@
 require("user.conf.bufferline")
 require("user.conf.indent-blankline")
-require("user.conf.session-manager")
+-- require("user.conf.session-manager")
+require("user.conf.possession")
 require("user.conf.autosave")
 require("user.conf.telescope")
 require("user.conf.tree-sitter")

@@ -58,7 +58,11 @@ require('packer').startup(function()
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   -- session
-  use  'Shatur/neovim-session-manager'
+--  use  'Shatur/neovim-session-manager'
+  use {
+    'jedrzejboczar/possession.nvim',
+    requires = { 'nvim-lua/plenary.nvim' },
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
