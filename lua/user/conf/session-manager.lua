@@ -19,9 +19,9 @@ require('session_manager').setup({
   max_path_length = 80,  -- Shorten the display path if length exceeds this threshold. Use 0 if don't want to shorten the path at all.
 })
 
--- vim.cmd([[
---  augroup _open_nvim_tree
---    autocmd! * <buffer>
---     autocmd SessionLoadPost * silent! lua require("nvim-tree").toggle(false, true)
---  augroup end
--- ]])
+ vim.cmd([[
+  augroup _open_nvim_tree
+    autocmd! * <buffer>
+     autocmd SessionLoadPost * silent! lua require("nvim-tree").toggle(false, true)
+  augroup end
+ ]])
