@@ -25,10 +25,9 @@ require('packer').startup(function()
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   -- snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
+ use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   -- Outline
---  use 'liuchengxu/vista.vim'
   use 'simrat39/symbols-outline.nvim'
   use "lukas-reineke/indent-blankline.nvim"
   -- auto save
@@ -46,6 +45,18 @@ require('packer').startup(function()
       'nvim-telescope/telescope.nvim',
       'nvim-telescope/telescope-ui-select.nvim',
       requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  -- TODO
+  use {
+  "folke/todo-comments.nvim",
+  requires = "nvim-lua/plenary.nvim",
+  config = function()
+    require("todo-comments").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
   }
   -- buffer UI
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}

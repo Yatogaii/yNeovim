@@ -86,7 +86,8 @@ keymap("n", "<leader>8", ":BufferLineGoToBuffer 8<cr>", opts)
 keymap("n", "<leader>9", ":BufferLineGoToBuffer 9<cr>", opts)
 --- for quick save possesion
 -- local session_name = os.getenv("pwd")
-local session_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+-- local session_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
+local status_ok, session_name = pcall(vim.cmd, "pwd")
 keymap("n", "<leader>ss", ":PossessionSave " .. session_name .. "<cr>", opts)
 keymap("n", "<leader>sl", ":Telescope possession list <cr>", opts)
 --- better buffer delete
