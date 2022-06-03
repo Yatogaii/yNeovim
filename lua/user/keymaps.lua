@@ -41,6 +41,8 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- buffer manage
 keymap("n", "<leader>bd", ":Bdelete<CR>", opts)
+-- quick save
+keymap("n", "<leader>w", ":w<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
@@ -73,7 +75,8 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Plugins --
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-keymap("n", "<leader>f", ":Telescope find_files<cr>", opts)
+keymap("n", "<leader>t", ":Telescope find_files<cr>", opts)
+keymap("n", "<leader>f", ":Format<cr>", opts)
 keymap("n", "<leader>v", ":SymbolsOutline<cr>", opts)
 keymap("n", "<leader>1", ":BufferLineGoToBuffer 1<cr>", opts)
 keymap("n", "<leader>2", ":BufferLineGoToBuffer 2<cr>", opts)
@@ -87,8 +90,16 @@ keymap("n", "<leader>9", ":BufferLineGoToBuffer 9<cr>", opts)
 --- for quick save possesion
 -- local session_name = os.getenv("pwd")
 -- local session_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
-local status_ok, session_name = pcall(vim.cmd, "pwd")
-keymap("n", "<leader>ss", ":PossessionSave " .. session_name .. "<cr>", opts)
+function get_session_name()
+    output = vim.api.nvim_command_output("pwd")
+    return string.match(output, "[^/]*$")
+end
+-- local status_ok, session_name = pcall(vim.cmd, "pwd")
+keymap("n", "<leader>ss", ":PossessionSave " .. get_session_name() .. "<cr>", opts)
 keymap("n", "<leader>sl", ":Telescope possession list <cr>", opts)
 --- better buffer delete
 keymap("n", "<leader>d", ":Bdelete<cr>", opts)
+--- quick quit
+keymap("n", "<leader>q", ":q<cr>", opts)
+-- better yanking
+keymap("v", "<leader>c", ":OSCYank<cr>", opts)

@@ -31,7 +31,9 @@ require('packer').startup(function()
   use 'simrat39/symbols-outline.nvim'
   use "lukas-reineke/indent-blankline.nvim"
   -- auto save
-  use "Pocco81/AutoSave.nvim"
+--  use "Pocco81/AutoSave.nvim"
+  -- yanking
+  use 'ojroques/vim-oscyank'
   -- file exploer
   use {
       "kyazdani42/nvim-tree.lua",
