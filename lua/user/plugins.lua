@@ -4,7 +4,7 @@ require('packer').startup(function()
   use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
   use 'habamax/vim-asciidoctor' -- asciidoctor plugin
   -- use 'ap/vim-buftabline'  -- buffer exploer
-  use 'jeetsukumaran/vim-buffergator'
+  -- use 'jeetsukumaran/vim-buffergator'
   -- use 'hrsh7th/cmp-nvim-lsp'  -- lsp completion
   use 'williamboman/nvim-lsp-installer'-- lsp installer
   -- format
@@ -15,6 +15,8 @@ require('packer').startup(function()
   use "lunarvim/colorschemes"
   use "lunarvim/darkplus.nvim"
   use "lunarvim/onedarker.nvim"
+  -- sneka
+  use 'justinmk/vim-sneak'
   -- tree-sitter
   use 'nvim-treesitter/nvim-treesitter'
   -- cmp
@@ -32,6 +34,8 @@ require('packer').startup(function()
   use "lukas-reineke/indent-blankline.nvim"
   -- auto save
 --  use "Pocco81/AutoSave.nvim"
+  -- language
+  use 'fatih/vim-go'
   -- yanking
   use 'ojroques/vim-oscyank'
   -- file exploer
@@ -48,6 +52,8 @@ require('packer').startup(function()
       'nvim-telescope/telescope-ui-select.nvim',
       requires = { {'nvim-lua/plenary.nvim'} }
   }
+  -- startup times
+   use "dstein64/vim-startuptime"
   -- TODO
   use {
   "folke/todo-comments.nvim",
@@ -75,6 +81,13 @@ require('packer').startup(function()
   use {
     'jedrzejboczar/possession.nvim',
     requires = { 'nvim-lua/plenary.nvim' },
+  }
+  -- comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
   }
 
   -- Automatically set up your configuration after cloning packer.nvim
