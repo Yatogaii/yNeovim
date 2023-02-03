@@ -103,3 +103,5 @@ keymap("n", "<leader>d", ":Bdelete<cr>", opts)
 keymap("n", "<leader>q", ":q<cr>", opts)
 -- better yanking
 keymap("v", "<leader>c", ":OSCYank<cr>", opts)
+-- quick jump
+keymap("n", "<leader>s", ":HopWord<cr>", opts)

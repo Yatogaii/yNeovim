@@ -26,14 +26,19 @@ require('packer').startup(function()
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
+  -- lsp status ui
+  use 'j-hui/fidget.nvim'
   -- snippets
- use "L3MON4D3/LuaSnip" --snippet engine
+  use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   -- Outline
   use 'simrat39/symbols-outline.nvim'
   use "lukas-reineke/indent-blankline.nvim"
-  -- auto save
---  use "Pocco81/AutoSave.nvim"
+  -- quick jump
+  use {
+    'phaazon/hop.nvim',
+    branch = 'v2', -- optional but strongly recommended
+  }
   -- language
   use 'fatih/vim-go'
   -- yanking
